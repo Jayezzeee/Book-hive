@@ -11,7 +11,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BeeHive App',
+      title: 'BookHive App',
       theme: ThemeData(primarySwatch: Colors.yellow),
       initialRoute: '/',
       routes: {
