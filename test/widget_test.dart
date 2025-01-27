@@ -1,11 +1,11 @@
+import 'package:book_finder01/book_finder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:book_finder01/main.dart';
 
 void main() {
   testWidgets('Search bar is present and can be interacted with', (WidgetTester tester) async {
     // Build the app and trigger a frame.
-    await tester.pumpWidget(BookFinderApp());
+    await tester.pumpWidget(BookFinderApp(username: '',));
 
     // Verify that the search bar is present.
     expect(find.byType(TextField), findsOneWidget);
@@ -19,7 +19,7 @@ void main() {
 
   testWidgets('Search icon triggers search', (WidgetTester tester) async {
     // Build the app and trigger a frame.
-    await tester.pumpWidget(BookFinderApp());
+    await tester.pumpWidget(BookFinderApp(username: '',));
 
     // Enter text into the search bar.
     await tester.enterText(find.byType(TextField), 'Flutter');
