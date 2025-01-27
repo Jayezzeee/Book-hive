@@ -17,7 +17,7 @@ class BookFinderApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         brightness: Brightness.light,
-        scaffoldBackgroundColor: const Color.fromARGB(255, 198, 181, 24), // Set background color to yellow
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 230, 0), // Set background color to yellow
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
